@@ -1,0 +1,22 @@
+# Dependencies and generated caches
+**/node_modules/
+**/.cache/
+**/.remotion/
+
+# Temporary renders and QA artifacts
+**/out/qa/
+**/out/*候选*.mp4
+**/out/*.tmp
+
+# Local environment and logs
+.env
+.env.*
+!.env.example
+*.log
+
+# Editor and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini

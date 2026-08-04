@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>原子游创宣传片风格确认</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="gallery-bar">
+      <div>
+        <strong>原子游创宣传片</strong>
+        <span>风格确认帧 · 1920×1080</span>
+      </div>
+      <nav aria-label="风格帧选择">
+        <button type="button" data-target="brand">01 品牌开场</button>
+        <button type="button" data-target="product">02 产品体验</button>
+        <button type="button" data-target="event">03 赛事作品</button>
+        <button type="button" data-target="all">全部</button>
+      </nav>
+    </header>
+
+    <main class="gallery">
+      <section class="frame frame-brand" data-frame="brand" aria-label="品牌开场风格帧">
+        <div class="brand-grid"></div>
+        <div class="corner-label">
+          <span class="atom-dot"></span>
+          ATOM GAME CO-CREATION
+        </div>
+        <div class="brand-copy">
+          <p class="eyebrow">游戏 × AI × 开源</p>
+          <h1>原子游创</h1>
+          <h2>AI 开源游戏共创平台</h2>
+          <div class="brand-rule"></div>
+          <p class="brand-statement">让游戏被发现、被体验，<br />也在社区中继续生长。</p>
+        </div>
+        <div class="orbit-stage" aria-hidden="true">
+          <div class="orbit orbit-a"></div>
+          <div class="orbit orbit-b"></div>
+          <div class="orbit orbit-c"></div>
+          <div class="orbit-pulse pulse-a"></div>
+          <div class="orbit-pulse pulse-b"></div>
+          <div class="orbit-pulse pulse-c"></div>
+          <img src="../images/atom-game-logo-original.png" alt="" />
+        </div>
+        <div class="brand-index">01 / BRAND OPEN</div>
+      </section>
+
+      <section class="frame frame-product" data-frame="product" aria-label="产品体验风格帧">
+        <div class="product-grid"></div>
+        <div class="product-spotlight"></div>
+        <div class="corner-label product-label">
+          <span class="atom-dot"></span>
+          ATOM GAME · LIVE PRODUCT
+        </div>
+        <div class="product-copy">
+          <p class="eyebrow product-eyebrow">DISCOVER & PLAY</p>
+          <h1>像刷视频一样<br /><em>发现游戏</em></h1>
+          <p class="product-note">无需下载 · 即点即玩</p>
+          <div class="feature-line">
+            <span><b>01</b> 发现</span><i></i><span><b>02</b> 体验</span><i></i><span><b>03</b> 反馈</span>
+          </div>
+        </div>
+        <div class="feed-stack" aria-hidden="true">
+          <figure class="feed-card feed-card-back">
+            <img src="../images/刷游戏2.jpg" alt="" />
+          </figure>
+          <figure class="feed-card feed-card-next">
+            <img src="../images/刷游戏3.jpg" alt="" />
+          </figure>
+        </div>
+        <div class="swipe-rail" aria-hidden="true">
+          <span>PREV</span>
+          <i></i>
+          <strong>SWIPE</strong>
+          <i></i>
+          <span>NEXT</span>
+        </div>
+        <div class="phone-shell">
+          <div class="phone-speaker"></div>
+          <video
+            data-src="../images/首页连续刷游戏.mp4"
+            autoplay
+            muted
+            loop
+            playsinline
+            preload="auto"
+          ></video>
+          <img class="phone-poster" src="assets/home-feed-poster.jpg" alt="原子游创首页游戏推荐流" />
+          <div class="phone-glass"></div>
+        </div>
+        <div class="product-caption">
+          <span>REAL PRODUCT FEED</span>
+          <strong>向上滑动，遇见下一个可玩的创意</strong>
+        </div>
+        <div class="brand-index product-index">02 / PRODUCT HERO</div>
+      </section>
+
+      <section class="frame frame-event" data-frame="event" aria-label="赛事作品风格帧">
+        <div class="event-grid"></div>
+        <div class="corner-label">
+          <span class="atom-dot coral-dot"></span>
+          OPEN SOURCE GAME COMMUNITY
+        </div>
+        <div class="event-copy">
+          <p class="eyebrow event-eyebrow">EVENT & COMMUNITY</p>
+          <h1>以赛事连接<br /><em>创作者与社区</em></h1>
+          <p>作品被看见，创意被接住。</p>
+          <div class="event-tags">
+            <span>开放协作</span>
+            <span>作品展示</span>
+            <span>社区连接</span>
+          </div>
+        </div>
+        <div class="event-stage" aria-hidden="true">
+          <figure class="event-panel event-panel-left">
+            <img src="../images/作品展示2.png" alt="" />
+          </figure>
+          <figure class="event-panel event-panel-center">
+            <img src="../images/作品展示1.png" alt="" />
+          </figure>
+          <figure class="event-panel event-panel-right">
+            <img src="../images/作品展示3.png" alt="" />
+          </figure>
+        </div>
+        <div class="event-proof">
+          <img src="../images/赛事奖励.png" alt="赛事奖励页面" />
+          <div><span>真实赛事成果</span><strong>让优秀作品获得反馈与认可</strong></div>
+        </div>
+        <div class="brand-index">03 / EVENT SHOWCASE</div>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
