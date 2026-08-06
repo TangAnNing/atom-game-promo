@@ -24,8 +24,8 @@ export const Events: React.FC = () => {
     easing: Easing.inOut(Easing.cubic),
   });
   const wallFrame = Math.max(0, frame - wallStart);
-  const wallMotionDuration = duration - wallStart - 38;
-  const wallCopy = interpolate(wallFrame, [0, 20, 86, 116], [0, 1, 1, 0], {
+  const wallMotionDuration = duration - wallStart;
+  const wallCopy = interpolate(wallFrame, [0, 18, 116, 142], [0, 1, 1, 0], {
     extrapolateLeft: 'clamp',
     extrapolateRight: 'clamp',
     easing: Easing.inOut(Easing.cubic),
@@ -33,6 +33,11 @@ export const Events: React.FC = () => {
   const exit = interpolate(frame, [duration - 8, duration], [0, 1], {
     extrapolateLeft: 'clamp',
     extrapolateRight: 'clamp',
+  });
+  const handoff = interpolate(frame, [duration - 8, duration], [0, 0.72], {
+    extrapolateLeft: 'clamp',
+    extrapolateRight: 'clamp',
+    easing: Easing.inOut(Easing.cubic),
   });
 
   return (
@@ -121,6 +126,13 @@ export const Events: React.FC = () => {
             从赛事展示，走向持续交流与连接
           </div>
         </div>
+        <AbsoluteFill
+          style={{
+            background: COLORS.ink,
+            opacity: handoff,
+            pointerEvents: 'none',
+          }}
+        />
       </AbsoluteFill>
     </GridBackground>
   );

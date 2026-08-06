@@ -61,10 +61,11 @@ export const DoraCore: React.FC = () => {
     easing: Easing.inOut(Easing.cubic),
   });
   const exitPoint = {
-    x: interpolate(exit, [0, 1], [1172, 1540]),
-    y: interpolate(exit, [0, 1], [307, 520]),
+    x: interpolate(exit, [0, 1], [1172, 1700]),
+    y: interpolate(exit, [0, 1], [307, 676]),
   };
   const haloIn = interpolate(frame, [15, 46], [0, 1], clamp);
+  const handoffLine = interpolate(exit, [0, 0.35, 1], [0, 1, 1], clamp);
 
   return (
     <AbsoluteFill
@@ -101,7 +102,7 @@ export const DoraCore: React.FC = () => {
         }}
       >
         <div style={{color: COLORS.yellow, fontSize: 27, fontWeight: 900, opacity: copyIn}}>
-          原子游创核心产品
+          原子游创的创作引擎
         </div>
         <div
           style={{
@@ -183,7 +184,7 @@ export const DoraCore: React.FC = () => {
             transform: `translateY(${(1 - descriptionIn) * 12}px)`,
           }}
         >
-          面向游戏创作与开源协作
+          多语言编码智能体，驱动游戏创作与开源协作
         </div>
         <div
           style={{
@@ -262,6 +263,21 @@ export const DoraCore: React.FC = () => {
           }}
         />
       ) : null}
+
+      <div
+        style={{
+          position: 'absolute',
+          left: 150,
+          top: 674,
+          width: 1620,
+          height: 4,
+          background: `linear-gradient(90deg, ${COLORS.yellow}, ${COLORS.coral} 45%, ${COLORS.cyan})`,
+          opacity: handoffLine,
+          transform: `scaleX(${exit})`,
+          transformOrigin: 'right center',
+          boxShadow: `0 0 24px rgba(85,216,208,${handoffLine * 0.28})`,
+        }}
+      />
     </AbsoluteFill>
   );
 };

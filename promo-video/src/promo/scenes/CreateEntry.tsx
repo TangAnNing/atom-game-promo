@@ -11,8 +11,8 @@ export const CreateEntry: React.FC = () => {
   const duration = SHOTS.create.duration;
   const copyIn = enter(frame, 12, 28);
   const typeStart = 46;
-  const typeEnd = 145;
-  const prompt = '一个 2D 像素风格的太空冒险游戏，玩家可以探索不同星球、收集资源并建造基地。';
+  const typeEnd = 124;
+  const prompt = '创作一个像素风跑酷游戏，加入昼夜变化和随机地图。';
   const typedLength = Math.floor(
     interpolate(frame, [typeStart, typeEnd], [0, prompt.length], {
       extrapolateLeft: 'clamp',
@@ -107,11 +107,11 @@ export const CreateEntry: React.FC = () => {
           }}
         >
           <div style={{fontSize: 92, lineHeight: 1.16, fontWeight: 900}}>
-            从这里<br />
-            <span style={{color: COLORS.yellow}}>开始创作</span>
+            在 DSGO<br />
+            <span style={{color: COLORS.yellow}}>发起创作</span>
           </div>
           <div style={{marginTop: 42, color: 'rgba(255,255,255,0.56)', fontSize: 26, fontWeight: 700}}>
-            一句话描述，让灵感成为可玩的起点
+            一句话提出想法，Dora SSR 在底层完成构建与验证
           </div>
         </div>
 

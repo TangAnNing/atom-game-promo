@@ -6,7 +6,7 @@ import {SHOTS} from '../timeline';
 
 const items = [
   {label: '游戏', note: '发现与体验', color: COLORS.yellow, fromX: -120, fromY: 28},
-  {label: 'AI', note: '辅助创作', color: COLORS.cyan, fromX: 0, fromY: -90},
+  {label: 'AI', note: '智能创作', color: COLORS.cyan, fromX: 0, fromY: -90},
   {label: '开源', note: '开放共创', color: COLORS.coral, fromX: 120, fromY: 28},
 ] as const;
 

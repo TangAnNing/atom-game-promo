@@ -5,6 +5,7 @@
 
 # Temporary renders and QA artifacts
 **/out/qa/
+**/out/review*/
 **/out/*候选*.mp4
 **/out/*.tmp
 

@@ -18,16 +18,16 @@ import {GridBackground} from './components/SceneBase';
 import {PhoneShell} from './components/PhoneShell';
 import {sceneOpacity} from './motion';
 import {COLORS, FONT} from './theme';
-import {FPS, SHOTS} from './timeline';
+import {FPS} from './timeline';
 
-export const HANDHELD_PROMO_INSERT_DURATION_IN_FRAMES = SHOTS.play.duration;
+export const HANDHELD_PROMO_INSERT_DURATION_IN_FRAMES = 339;
 
 const PHONE_ENTER_FRAME = 6;
 const PHONE_EXIT_FRAME = 114;
 const HANDHELD_START_FRAME = 132;
 const HANDHELD_ENTER_DURATION = 30;
 const GAMEPLAY_TRIM_SECONDS = 5.1;
-const BGM_TRIM_FRAMES = 11 + SHOTS.play.from;
+const BGM_TRIM_FRAMES = 11 + 685;
 
 const clamp = {
   extrapolateLeft: 'clamp' as const,
