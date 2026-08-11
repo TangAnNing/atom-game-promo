@@ -67,7 +67,7 @@ npx tsc --noEmit
 npx remotion render src/index.ts AtomGamePromo "out/原子游创宣传片-候选.mp4" --codec=h264 --crf=18 --concurrency=4
 ```
 
-成片输出和 QA 抽帧默认不纳入 Git 跟踪；源码、产品素材和 Git LFS 文件可以复现完整视频。
+当前本地交付文件为 `promo-video/out/原子游创宣传片-最终版.mp4`。成片输出和 QA 抽帧默认不纳入 Git 跟踪；源码、产品素材和 Git LFS 文件可以复现完整视频。
 
 ## 修改原则
 

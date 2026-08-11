@@ -7,6 +7,7 @@
 **/out/qa/
 **/out/review*/
 **/out/*候选*.mp4
+**/out/*最终版*.mp4
 **/out/*.tmp
 
 # Local environment and logs
